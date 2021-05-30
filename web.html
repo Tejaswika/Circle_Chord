@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>SIMULATIONS</title>
+</head>
+<body>
+    <svg id="canvas"height="400" width="450">
+          <path id="lineCD" d="M 500 340 l 350 0" stroke="black" stroke-width="3" fill="none" />
+          <path id="lineAB" d="M 470 250 l 410 0" stroke="black" stroke-width="3" fill="none" />
+          <path id="lineAQ" d="M 475 250 l 45 -149" stroke="black" stroke-width="3" fill="none" />
+          <path id="lineBQ" d="M 520 110 l 360 140" stroke="black" stroke-width="3" fill="none" />
+          <path id="lineCP" d="M 500 340 l 200 -300" stroke="black" stroke-width="3" fill="none" />
+          <path id="lineDP" d="M 700 40 l 150 300" stroke="black" stroke-width="3" fill="none" />
+          <circle id="point" cx="50%" cy="50%" r="200"  stroke="black" stroke-width="3" fill="purple" fill-opacity="0.4"/>
+          <!-- Mark relevant points -->
+          <g stroke="black" stroke-width="3" fill="black">
+              
+            <circle id="pointA" cx="475" cy="250" r="3" />
+            <circle id="pointB" cx="875" cy="250" r="3" />
+            <circle id="pointC" cx="500" cy="340" r="3" />
+            <circle id="pointD" cx="850" cy="340" r="3" />
+            <circle id="pointQ" cx="520" cy="110" r="3" />
+            <circle id="pointP" cx="700" cy="40" r="3" />
+          </g>
+          <!-- Label the points -->
+          <g font-size="30" font-family="sans-serif" fill="black" stroke="none" text-anchor="middle">
+            <text x="470" y="250" dx="-30">A</text>
+            <text x="920" y="250" dx="-30">B</text>
+            <text x="510" y="340" dx="-30">C</text>
+            <text x="900" y="340" dx="-30">D</text>
+            <text x="510" y="120" dy="-10">Q</text>
+            <text x="680" y="40" dx="30">P</text>
+          </g>
+          Sorry, your browser does not support inline SVG.
+        </svg>
+        
+<div id="bottom">
+    <input type="range" min="1" max="100" value="50" class="slider" id="Range">
+    <h2 id="type">This slider is for changing the lenght of AB</h2>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
